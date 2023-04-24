@@ -1,0 +1,15 @@
+body {
+    background-image: url('imgs/PNG\ image\ 3.jpeg');
+    background-size: 150px;
+}
+
+.inner {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+     
+img {
+    display:block;
+    margin: auto;
+}
