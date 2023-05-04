@@ -9,6 +9,11 @@ body {
     height: 100vh;
 }
      
+a {
+    display:block;
+    margin: auto;
+}
+
 img {
     display:block;
     margin: auto;

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Opt-in Form</title>
+    <style>
+        form {
+            width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        label, input, button {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="sms-opt-in-form" action="your_form_processing_script" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="^\d{10}$" required>
+        <small>Format: 1234567890</small>
+
+        <label for="sms-consent">
+            <input type="checkbox" id="sms-consent" name="sms_consent" required>
+            I consent to receive SMS messages
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
